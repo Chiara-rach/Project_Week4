@@ -1,0 +1,88 @@
+#Code Book
+## Variable description
+
+
+*t*   prefix to denote time
+*f*   prefix to denote that the Fast Fourier Transformation was applied
+*Body*  refers to body acceleration
+*Gravity*  refers to gravity aceleration
+*Acc*   means that the accelerometer was used to obtain the signals
+*Gyro*  means that the gyroscope was used to obtain the signals
+*Jerk*  refers to the signals obtain after the derivation of the body linear acceleration and angular velocity in time, obtainig three dimensional signals (XYZ)
+*Mag* refers to a magnitude of the 3D signals calculated using the Euclidean Norm
+*X*  refers to the X axis
+*Y*  refers to the Y axis
+*Z*  refers to the Z axis
+*mean*  refers to the mean value
+*std*   refers to the standard deviation
+
+## Variable names
+
+### *Original names*                            **New names**
+
+*V1/ tBodyAcc-mean()-X*               **mean_tBody_AccelerometerXaxis**
+*V2 / tBodyAcc-mean()-Y*              **mean_tBody_AccelerometerYaxis**
+*V3 / tBodyAcc-mean()-Z*              **mean_tBody_AccelerometerZaxis**
+*V4 / tBodyAcc-std()-X*               **std_ tbBdy_AccelerometerXaxis**
+*V5 / tBodyAcc-std()-Y*               **std_ tBody_AccelerometerYaxis**
+*V6 / tBodyAcc-std()-Z*               **std_ tBody_AccelerometerZaxis**
+*V41 / tGravityAcc-mean()-X*          **mean_tGravity_AccelerometerXaxis**
+*V42 / tGravityAcc-mean()-Y*          **mean_tGravity_AccelerometerYaxis**
+*V43 / tGravityAcc-mean()-Z*          **mean_tGravity_AccelerometerZaxis**
+*V44 / tGravityAcc-std()-X*           **std_tGravity_AccelerometerXaxis**
+*V45 / tGravityAcc-std()-Y*           **std_tGravity_AccelerometerYaxis**
+*V46 / tGravityAcc-std()-Z*           **std_tGravity_AccelerometerZaxis**
+*V81 / tBodyAccJerk-mean()-X*         **mean_tBody_Accelerometer_JerkXaxis**
+*V82 / tBodyAccJerk-mean()-Y*         **mean_tBody_Accelerometer_JerkYaxis**
+*V83 / tBodyAccJerk-mean()-Z*         **mean_tBody_Accelerometer_JerkZaxis**
+*V84 / tBodyAccJerk-std()-X*          **std_tBody_Accelerometer_JerkXaxis**
+*V85 / tBodyAccJerk-std()-Y*          **std_tBody_Accelerometer_JerkYaxis**
+*V86 / tBodyAccJerk-std()-Z*          **std_tBody_Accelerometer_JerkZaxis**
+*V121 / tBodyGyro-mean()-X*           **mean_tBody_GyroscopeXaxis**
+*V122 / tBodyGyro-mean()-Y*           **mean_tBody_GyroscopeYaxis**
+*V123 / tBodyGyro-mean()-Z*           **mean_tBody_GyroscopeZaxis**
+*V124 / tBodyGyro-std()-X*            **std_tBody_GyroscopeXaxis**
+*V125 / tBodyGyro-std()-Y*            **std_tBody_GyroscopeYaxis**
+*V126 / tBodyGyro-std()-Z*            **std_tBody_GyroscopeZaxis**
+*V161 / tBodyGyroJerk-mean()-X*       **mean_tBody_Gyroscope_JerkXaxis**
+*V162 / tBodyGyroJerk-mean()-Y*       **mean_tBody_Gyroscope_JerkYaxis**
+*V163 / tBodyGyroJerk-mean()-Z*       **mean_tBody_Gyroscope_JerkZaxis**
+*V164 / tBodyGyroJerk-std()-X*        **std_tBody_Gyroscope_JerkXaxis**
+*V165 / tBodyGyroJerk-std()-Y*        **std_tBody_Gyroscope_JerkYaxis**
+*V166 / tBodyGyroJerk-std()-Z*        **std_tBody_Gyroscope_JerkZaxis**
+*V201 / tBodyAccMag-mean()*           **mean_tBody_Accelerometer_Mag**
+*V202 / tBodyAccMag-std()*            **std_tBody_Accelerometer_Mag**
+*V214 / tGravityAccMag-mean()*        **mean_tGravity_Accelerometer_Mag**
+*V215 / tGravityAccMag-std()*         **std_tGravity_Accelerometer_Mag**
+*V227 / tBodyAccJerkMag-mean()*       **mean_tBody_Accelerometer_Jerk_Mag**
+*V228 / tBodyAccJerkMag-std()*        **std_tBody_Accelerometer_Jerk_Mag**
+*V240 / tBodyGyroMag-mean()*          **mean_tBody_Gyroscope_Mag**
+*V241 / tBodyGyroMag-std()*           **std_tBody_Gyroscope_Mag**
+*V253 / tBodyGyroJerkMag-mean()*      **mean_tBody_Gyroscope_Jerk_Mag**
+*V254 / tBodyGyroJerkMag-std()*       **std_tBody_Gyroscope_Jerk_Mag**
+*V266 / fBodyAcc-mean()-X*            **mean_fBody_AccelerometerXaxis**
+*V267 / fBodyAcc-mean()-Y*            **mean_fBody_AccelerometerYaxis**
+*V268 / fBodyAcc-mean()-Z*            **mean_fBody_AccelerometerZaxis**
+*V269 / fBodyAcc-std()-X*             **std_fBody_AccelerometerXaxis**
+*V270 / fBodyAcc-std()-Y*             **std_fBody_AccelerometerYaxis**
+*V271 / fBodyAcc-std()-Z *            **std_fBody_AccelerometerZaxis**
+*V345 / fBodyAccJerk-mean()-X*        **mean_fBody_Accelerometer_JerkXaxis**
+*V346 / fBodyAccJerk-mean()-Y*        **mean_fBody_Accelerometer_JerkYaxis**
+*V347 / fBodyAccJerk-mean()-Z*        **mean_fBody_Accelerometer_JerkZaxis**
+*V348 / fBodyAccJerk-std()-X*         **std_fBody_Accelerometer_JerkXaxis**
+*V349 / fBodyAccJerk-std()-Y*         **std_fBody_Accelerometer_JerkYaxis**
+*V350 / fBodyAccJerk-std()-Z*         **std_fBody_Accelerometer_JerkZaxis**
+*V424 / fBodyGyro-mean()-X*           **mean_fBody_GyroscopeXaxis**
+*V425 / fBodyGyro-mean()-Y*           **mean_fBody_GyroscopeYaxis**
+*V426 / fBodyGyro-mean()-Z*           **mean_fBody_GyroscopeZaxis**
+*V427 / fBodyGyro-std()-X*            **std_fBody_GyroscopeXaxis**
+*V428 / fBodyGyro-std()-Y*            **std_fBody_GyroscopeYaxis**
+*V429 / fBodyGyro-std()-Z*            **std_fBody_GyroscopeZaxis**
+*V503 / fBodyAccMag-mean()*           **mean_fBody_Accelerometer_Mag**
+*V504 / fBodyAccMag-std()*            **std_fBody_Accelerometer_Mag**
+*V516 / fBodyBodyAccJerkMag-mean()*   **mean_fBody_Accelerometer_Jerk_Mag**
+*V517 / fBodyBodyAccJerkMag-std()*    **std_fBody_Accelerometer_Jerk_Mag**
+*V529 / fBodyGyroMag-mean()*          **mean_fBody_Gyroscope_Mag**
+*V530 / fBodyGyroMag-std()*           **std_fBody_Gyroscope_Mag**
+*V542 / fBodyGyroJerkMag-mean()*      **mean_fBody_Gyroscope_Jerk_Mag**
+*V543 / fBodyGyroJerkMag-std()*       **std_fBody_Gyroscope_Jerk_Mag**
